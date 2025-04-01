@@ -1,0 +1,78 @@
+.app-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.editor-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.menu-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+    cursor: pointer;
+    border-radius: 4px;
+
+    .menu-icon {
+      color: #333;
+    }
+
+    &:hover {
+      background-color: #e6e6e6;
+    }
+
+    &.is-active {
+      background-color: #d3d3d3;
+      border-color: #aaa;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+}
+
+.ProseMirror {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 150px;
+  
+  &:focus {
+    outline: none;
+    border-color: #aaa;
+  }
+
+  p {
+    margin: 0.5em 0;
+  }
+
+  ul, ol {
+    padding-left: 2em;
+  }
+
+  blockquote {
+    border-left: 3px solid #ddd;
+    margin-left: 0;
+    padding-left: 1em;
+    color: #666;
+  }
+}
